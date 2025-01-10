@@ -1,4 +1,4 @@
-Setup and Dependencies
+//Setup and Dependencies
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -20,8 +20,8 @@ mongoose.connect('mongodb://localhost:27017/event_management', {
 }).then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('Failed to connect to MongoDB', err));
 
-Database Models
-1. User Model
+//Database Models
+//1. User Model
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
@@ -38,7 +38,7 @@ userSchema.pre('save', async function (next) {
 
 const User = mongoose.model('User', userSchema);
 
-2.Event Model
+//2.Event Model
 const eventSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
@@ -54,7 +54,7 @@ const eventSchema = new mongoose.Schema({
 
 const Event = mongoose.model('Event', eventSchema);
 
-Authentication Middleware
+//Authentication Middleware
 
 const authenticate = (req, res, next) => {
   const token = req.headers['authorization'];
@@ -71,8 +71,8 @@ const authenticate = (req, res, next) => {
 
 
 
-API Routes
-1. User Routes
+//API Routes
+//1. User Routes
 // Register a new user
 app.post('/api/register', async (req, res) => {
   const { name, email, password, role } = req.body;
@@ -103,7 +103,7 @@ app.post('/api/login', async (req, res) => {
 });
 
 
-2.Event Routes
+//2.Event Routes
 // Create a new event
 app.post('/api/events', authenticate, async (req, res) => {
   if (req.user.role !== 'organizer') {
@@ -149,14 +149,14 @@ app.post('/api/events/:id/register', authenticate, async (req, res) => {
 });
 
 
-Run the Server
+//Run the Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-Testing the API
+//Testing the API
 Use Postman or cURL to test each endpoint.
 Test the /api/register and /api/login endpoints to create users and authenticate them.
 Use the token from the login response to access protected routes like creating events and registering for events.
