@@ -1,0 +1,121 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230411/pngtree-empty-auditorium-with-seats-before-the-start-of-the-performance-photo-image_2376396.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            padding: 5px 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        header img {
+            max-width: 80px;
+            max-height: 80px;
+            display: block;
+            margin: 5px auto;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            color: #1e90ff;
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ffa500; /* Highlight on hover */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #f4f4f4;
+        }
+
+        .poster {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .description h2 {
+            color: #ffa500;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            margin: 10px 0;
+        }
+
+        .info span {
+            font-weight: bold;
+            color: #ffa500;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .actions button {
+            background-color: #ffa500;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .actions button:hover {
+            background-color: #cc8400;
+        }
+
+        .actions button:focus {
+            outline: none;
+        }
