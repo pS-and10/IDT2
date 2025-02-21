@@ -1,0 +1,108 @@
+/* Styles for the new page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(194, 203, 254), rgb(255, 230, 230));
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: #1A2D42;
+    padding: 5px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    max-width: 80px;
+    max-height: 80px;
+    display: block;
+    margin: 5px auto;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #1e90ff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ffa500;
+}
+
+.image-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Increased margin between containers */
+    padding: 20px;
+    justify-items: center;
+}
+
+.section {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Make image fill the container */
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the container properly */
+}
+
+.section p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Center the last section */
+.image-sections .section:nth-child(7) {
+    grid-column: 2;
+}
+footer {
+    background-color: #1A2D42;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
