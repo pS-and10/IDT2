@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="window.history.back();">←</button>
+        <img src="Screenshot 2025-02-20 192133.png" alt="Event Logo">
+        
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Category</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="signUp.html">Sign Up</a>
+            <a href="logIn.html">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have any questions or issues? Reach out to us!</p>
+
+        <div class="contact-details">
+            <p><strong>Email:</strong> support@eventhub.com 📧</p>
+            <p><strong>Phone:</strong> +91 98765 43210 📞</p>
+            <p><strong>Office Address:</strong> Silver Oak University, Ahmedabad 🏢</p>
+        </div>
+
+        <form id="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Event Issues">Event Issues</option>
+                <option value="Volunteer Queries">Volunteer Queries</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h3>📍 Our Location</h3>
+        <iframe 
+            src="https://maps.google.com/maps?q=Silver%20Oak%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>All Rights Reserved. &copy; 2025 Copyrights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Message Sent Successfully!");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
