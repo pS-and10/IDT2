@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(194, 203, 254),rgb(255, 230, 230));
+    color : #333;
+}
+
+header {
+    background-color: #1A2D42;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    max-width: 80px;
+    max-height: 80px;
+    display: block;
+    margin: 5px auto;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: white; 
+    color:black/* Highlight on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:white ;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: balck;
+}
+
+.poster {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.description h2 {
+    color: #0033c1;
+    margin-bottom: 10px;
+
+}
+
+.info {
+    margin: 10px 0;
+}
+
+.info span {
+    font-weight: bold;
+    color: #0e4bf1;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.actions button {
+    background-color: #4070f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #0e4bf1;
+}
+
+.actions button:focus {
+    outline: none;
+}
+footer {
+    background-color: #1A2D42;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
