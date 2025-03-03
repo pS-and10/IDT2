@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer Event Upload</title>
+    <link rel="stylesheet" type="text/css" href="create_event.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">☰</div>
+        <div class="logo">
+            <img src="Screenshot 2025-02-20 192133.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Manage Events</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">My Events</a></li>
+            <li><a href="#">Insights</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Upload Event Details</h2>
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="eventImage">Upload Event Image:</label>
+            <input type="file" id="eventImage" name="eventImage" accept="image/*" required>
+            
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required>
+            
+            <label for="eventTopic">Topic:</label>
+            <input type="text" id="eventTopic" name="eventTopic" required>
+            
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+            
+            <label for="eventOrganizer">Organizer Name:</label>
+            <input type="text" id="eventOrganizer" name="eventOrganizer" required>
+            
+            <label for="eventClub">Organizer Club:</label>
+            <input type="text" id="eventClub" name="eventClub" required>
+            
+            <label for="eventTime">Timing:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+            
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            
+            <label for="eventVenue">Venue:</label>
+            <input type="text" id="eventVenue" name="eventVenue" required>
+            
+            <label for="eventGuests">Special Guests:</label>
+            <textarea id="eventGuests" name="eventGuests" rows="2" required></textarea>
+            
+            <button type="submit">Upload Event</button>
+        </form>
+    </div>
+    <div class="previous-events">
+        <h2>Your Previous Events</h2>
+        <div class="event-images1">
+            <a href="#"></a><img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/MicrosoftTeams-image%20%2815%29_1.png?itok=vTFSR7Xe" alt="Event 1">
+            <a href="#"></a><img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/MicrosoftTeams-image%20%2815%29_1.png?itok=vTFSR7Xe" alt="Event 2">
+            <a href="#"></a><img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/MicrosoftTeams-image%20%2815%29_1.png?itok=vTFSR7Xe" alt="Event 3">
+        </div>
+    </div>
+    <div class="uploaded-events">
+        <h2>Your Uploaded Events:</h2>
+        <div class="event-images">
+            <div class="event-container">
+                <img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/MicrosoftTeams-image%20%2815%29_1.png?itok=vTFSR7Xe" alt="Event 1">
+                <button class="event-button">Edit</button>
+            </div>
+            <div class="event-container">
+                <img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/MicrosoftTeams-image%20%2815%29_1.png?itok=vTFSR7Xe" alt="Event 2">
+                <button class="event-button">Edit</button>
+            </div>
+            <div class="event-container">
+                <img src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/MicrosoftTeams-image%20%2815%29_1.png?itok=vTFSR7Xe" alt="Event 3">
+                <button class="event-button"></button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>All Rights Reserved. &copy; 2025 Copyrights Reserved.</p>
+    </footer>
+</body>
+</html>
