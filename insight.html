@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Insights</title>
+    <link rel="stylesheet" href="insight.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="window.history.back();">←</button> 
+        <img src="event-logo.png" alt="Event Logo">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Category</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="signUp.html">Sign Up</a>
+            <a href="logIn.html">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Event Insights</h2>
+
+        <!-- Bar Chart: Number of Participants per Event -->
+        <canvas id="eventChart"></canvas>
+
+        <!-- Pie Chart: Percentage Distribution of Event Categories -->
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <footer>
+        <p>All Rights Reserved. &copy; 2025 Copyrights Reserved.</p>
+    </footer>
+
+    <script src="insight.js"></script>
+</body>
+</html>
