@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(194, 203, 254), rgb(255, 230, 230));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 500px; /* Increased width */
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.wrapper h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Profile Image */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-image img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.input-box {
+    margin: 18px 0;
+}
+
+.input-box label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1.5px solid #C7BEBE;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #4070f4;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group button {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#editBtn {
+    background: #4070f4;
+    color: #fff;
+}
+
+#editBtn:hover {
+    background: #0e4bf1;
+}
+
+#saveBtn {
+    background: gray;
+    color: #fff;
+}
+
+#saveBtn:disabled {
+    background: lightgray;
+    cursor: not-allowed;
+}
+
+#saveBtn:hover:enabled {
+    background: #28a745;
+}

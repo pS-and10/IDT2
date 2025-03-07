@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Orbit</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <li><span class="material-symbols-outlined" id="menu-button">menu</span></li>
+        <img class="img1" src="Screenshot 2025-02-20 192133.png" alt="Event Logo" align="CENTER" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Category</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="logIn.html">Login</a></li>
+          <li><a href="signUp.html">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span style="color: black;">Event Orbit Menu</span>
+        <button class="toggle-btn" id="close-btn">-></button>
+      </div>
+  
+      <ul class="sidebar-menu">
+        <hr>
+        <li>
+          <a href="index.html">
+            <span class="icon">🏠</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="categories.html">
+            <span class="icon">🔖</span>
+            <span>Categories</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="volunteer.html">
+            <span class="icon">👐</span>
+            <span>Volunteer</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="contactus.html">
+            <span class="icon">📞</span>
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="logIn.html">
+            <span class="icon">🔑</span>
+            <span>Login</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="signUp.html">
+            <span class="icon">✏️</span>
+            <span>Sign Up</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="profile.html">
+            <span class="icon">👤</span>
+            <span>Profile</span>
+          </a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+
+    <div class="bg-image"></div>
+
+    <div class="slider-main">
+      <div class="slider">
+        <div class="slide">
+            <a href="eventdesc.html">
+              <img src="img3.jpg" alt="Image 3" class="slider-img" />
+            </a>
+          </div> 
+        <div class="slide">
+          <a href="eventdesc.html" target="_blank">
+            <img src="img.jpg" alt="Image 1" class="slider-img" />
+          </a>
+        </div>
+        <div class="slide">
+          <a href="eventdesc.html">
+            <img src="img2.jpg" alt="Image 2" class="slider-img" />
+          </a>
+        </div>
+        <!-- <div class="slide">
+          <a href="eventdesc.html">
+            <img src="img3.jpg" alt="Image 3" class="slider-img" />
+          </a>
+        </div> -->
+    </div>
+    </div>
+
+    <h2 style="margin-top: 40px; margin-left: 20px" id="for-you-section">
+      For you
+    </h2>
+    <section class="image-section">
+      <div class="image-container">
+        <!-- Event 1 -->
+        <div class="container">
+          <a href="eventdesc.html">
+            <img src="foryou1.jpg" alt="Event 1" class="event-image" />
+            <button class="btn">Book</button>
+          </a>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="container">
+          <a href="eventdesc.html">
+            <img src="foryou2.jpg" alt="Event 2" class="event-image" />
+            <button class="btn">Book</button>
+          </a>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="container">
+          <a href="eventdesc.html">
+            <img src="foryou3.jpg" alt="Event 3" class="event-image" />
+            <button class="btn">Book</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <h2 style="margin-top: 40px; margin-left: 20px">Recommendations</h2>
+    <section class="image-section">
+      <div class="image-container">
+        <div class="container">
+          <a href="eventdesc.html">
+            <img src="foryou2.jpg" alt="Event 1" class="event-image" />
+            <button class="btn">Book</button>
+          </a>
+        </div>
+
+        <div class="container">
+            <a href="eventdesc.html">
+            <img src="foryou3.jpg" alt="Event 2" class="event-image" />
+            <button class="btn">Book</button>
+            </a>
+        </div>
+
+        <div class="container">
+            <a href="eventdesc.html">
+            <img src="foryou1.jpg" alt="Event 3" class="event-image" />
+            <button class="btn">Book</button>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>
+            "This website made event management so much easier! I love the
+            ticket booking feature."
+          </p>
+          <h4>- Jane Doe</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "As a volunteer, I found so many opportunities to contribute to
+            amazing events. Highly recommend!"
+          </p>
+          <h4>- John Smith</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How can I book tickets for an event?</h3>
+        <p>
+          To book a ticket, go to the event page and click the 'Book Ticket'
+          button. Follow the instructions to complete your booking.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I become a volunteer for an event?</h3>
+        <p>
+          Yes, you can apply to become a volunteer by visiting the 'Volunteer'
+          section and signing up for available events.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I contact the event organizers?</h3>
+        <p>
+          You can reach the organizers directly through the event's contact page
+          or by using the 'Contact Us' form on our website.
+        </p>
+      </div>
+    </section>
+
+    <section class="questionary">
+      <h2>Have a Question? Ask Us!</h2>
+      <form action="/submit-question" method="POST">
+        <textarea
+          name="question"
+          id="question"
+          placeholder="Type your question here..."
+          required
+        ></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/terms-and-conditions" class="terms-link"
+          >Terms and Conditions</a
+        >
+      </div>
+
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">
+          <img src="facebook.png" alt="Facebook" class="social-icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="twitter.png" alt="Twitter" class="social-icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="social-icon" />
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn" class="social-icon" />
+        </a>
+      </div>
+      <p>&copy; 2025 University Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
