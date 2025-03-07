@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(194, 203, 254),rgb(255, 230, 230));
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #1A2D42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.logo {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.logo img {
+    height: 50px;
+    width: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+nav ul li a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+#menu-button {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    bottom: 4px;
+    z-index: 100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Start off-screen */
+    height: 100%;
+    width: 250px;
+    background-image: linear-gradient(rgb(194, 203, 254), rgb(255, 230, 230));
+    /* Changed to match website's blue theme */
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0;
+    /* Move on-screen when open */
+  }
+
+  .sidebar ul li a {
+    color: rgb(0, 0, 0);
+  }
+
+  .sidebar-header {
+    padding: 10px 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-menu li {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+  }
+
+  .sidebar-menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+
+  }
+
+  .sidebar-menu li a:hover {
+    opacity: 0.8;
+  }
+
+  .sidebar-menu .icon {
+    margin-right: 15px;
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+  }
+
+  /* Mobile overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Adjust existing menu button */
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
+
+  /* Stop event propagation for sidebar itself */
+  #sidebar {
+    pointer-events: auto;
+  }
+.container-form {
+    width: 50%;
+    margin: 100px auto 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.main {
+    text-align: center;
+}
+.h2-for-previous{
+    margin-left: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+}
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #4070f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #0e4bf1;
+}
+
+.container {
+    position: relative; /* Make the container a positioning context */
+    display: inline-block; /* Ensure the container wraps the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.event-image {
+    /* width: 100%;   
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover; */
+    width: 100%; /* Ensure the image fills the container */
+    max-width: 450px; /* Adjust as needed */
+    height: 300px; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    border-radius: 10px;
+}
+.btn {
+    position: absolute;
+   top : 77%;
+   left : 20%;
+   height: 40px;
+   transform : translate(-50%, -50%);
+   -ms-transform : translate(-50%, -50%);
+   background-color: #4070f4;
+   color: white;
+   font-size: 16px;
+   padding: 12px 24px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   text-align: center;     
+   position: absolute; /* Position the button absolutely within the container */
+   bottom: 20px; /* Distance from the bottom */
+   left: 85%; /* Center horizontally */
+   transform: translateX(-50%); /* Adjust for exact centering */
+   padding: 10px 20px; /* Button padding */
+     /* Button background color */
+  /* You can change the border color */
+   color: white; /* Button text color */
+   border: none; /* Remove default border */
+   border-radius: 5px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+   font-size: 16px; /* Button text size */
+ }
+.container .btn:hover {
+   background: #0e4bf1;
+   color: white;
+}
+.image-section {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    
+}
+.previous-events {
+    width: 100%;
+    padding: 20px;
+}
+.previous-events h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+.uploaded-events {
+    width: 100%;
+    padding: 20px;
+}
+.uploaded-events h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+.event-images1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+.event-images1 img {
+    width: 33%;
+    height: auto;
+    object-fit: cover;
+}
+.event-images {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+.event-container {
+    position: relative;
+    width: 33%;
+}
+.event-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.event-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.event-button:hover {
+    background: darkblue;
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

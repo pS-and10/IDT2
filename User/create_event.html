@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer Event Upload</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+  />
+    <link rel="stylesheet" type="text/css" href="create_event.css">
+</head>
+<body>
+    <nav>
+      <li><span class="material-symbols-outlined" id="menu-button">menu</span></li>
+        <div class="logo">
+            <img src="Screenshot 2025-02-20 192133.png" alt="Logo">
+        </div>
+        <ul>
+          <li><a href="or_home.html">Home</a></li>
+          <li><a href="create_event.html">Manage Event</a></li>
+          <li><a href="or_volunteer.html">Volunteers</a></li>
+          <li><a href="create_event.html">My Events</a></li>
+          <li><a href="insight.html">Insights</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span style="color: black;">Event Orbit Menu</span>
+        <button class="toggle-btn" id="close-btn">-></button>
+      </div>
+  
+      <ul class="sidebar-menu">
+        <hr>
+        <li>
+          <a href="index.html">
+            <span class="icon">🏠</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="categories.html">
+            <span class="icon">🔖</span>
+            <span>Create/Manage</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="volunteer.html">
+            <span class="icon">👐</span>
+            <span>Volunteers</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="contactus.html">
+            <span class="icon">📞</span>
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="logIn.html">
+            <span class="icon">🔑</span>
+            <span>Login</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="signUp.html">
+            <span class="icon">✏️</span>
+            <span>Sign Up</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="profile.html">
+            <span class="icon">👤</span>
+            <span>Profile</span>
+          </a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+    
+    <div class="container-form">
+        <h2 class="main">Upload Event Details</h2>
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="eventImage">Upload Event Image:</label>
+            <input type="file" id="eventImage" name="eventImage" accept="image/*" required>
+            
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required>
+            
+            <label for="eventTopic">Topic:</label>
+            <input type="text" id="eventTopic" name="eventTopic" required>
+            
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+            
+            <label for="eventOrganizer">Organizer Name:</label>
+            <input type="text" id="eventOrganizer" name="eventOrganizer" required>
+            
+            <label for="eventClub">Organizer Club:</label>
+            <input type="text" id="eventClub" name="eventClub" required>
+            
+            <label for="eventTime">Timing:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+            
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            
+            <label for="eventVenue">Venue:</label>
+            <input type="text" id="eventVenue" name="eventVenue" required>
+            
+            <label for="eventGuests">Special Guests:</label>
+            <textarea id="eventGuests" name="eventGuests" rows="2" required></textarea>
+            
+            <button type="submit">Upload Event</button>
+        </form>
+    </div>
+    <h2 style="margin-top: 40px; margin-left: 30px" class="h2-for-previous">
+        Your Previous evnets
+      </h2>
+      <section class="image-section">
+        <div class="image-container">
+          <!-- Event 1 -->
+          <div class="container">
+            <a href="eventdesc.html">
+              <img src="foryou1.jpg" alt="Event 1" class="event-image" />
+              <button class="btn">More</button>
+            </a>
+          </div>
+  
+          <!-- Event 2 -->
+          <div class="container">
+            <a href="eventdesc.html">
+              <img src="foryou2.jpg" alt="Event 2" class="event-image" />
+              <button class="btn">More</button>
+            </a>
+          </div>
+  
+          <!-- Event 3 -->
+          <div class="container">
+            <a href="eventdesc.html">
+              <img src="foryou3.jpg" alt="Event 3" class="event-image" />
+              <button class="btn">More</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <h2 style="margin-top: 40px; margin-left: 30px" class="h2-for-previous">
+        Your upcoming evnets
+      </h2>
+      <section class="image-section">
+        <div class="image-container">
+          <!-- Event 1 -->
+          <div class="container">
+            <a href="eventdesc.html">
+              <img src="foryou1.jpg" alt="Event 1" class="event-image" />
+              <button class="btn">Edit</button>
+            </a>
+          </div>
+  
+          <!-- Event 2 -->
+          <div class="container">
+            <a href="eventdesc.html">
+              <img src="foryou2.jpg" alt="Event 2" class="event-image" />
+              <button class="btn">Edit</button>
+            </a>
+          </div>
+  
+          <!-- Event 3 -->
+          <div class="container">
+            <a href="eventdesc.html">
+              <img src="foryou3.jpg" alt="Event 3" class="event-image" />
+              <button class="btn">Edit</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    
+    <footer>
+        <p>All Rights Reserved. &copy; 2025 Copyrights Reserved.</p>
+    </footer>
+    <script>
+      const menuButton = document.getElementById('menu-button');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('close-btn');
+const overlay = document.getElementById('overlay');
+
+if (menuButton && sidebar && closeBtn && overlay) {
+    menuButton.addEventListener('click', function (e) {
+        e.stopPropagation();
+        sidebar.classList.add('open');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        closeSidebar();
+    });
+
+    overlay.addEventListener('click', closeSidebar);
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function (e) {
+        if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && e.target !== menuButton) {
+            closeSidebar();
+        }
+    });
+
+    sidebar.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+}
+    </script>
+</body>
+</html>

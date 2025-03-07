@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+  />
+    <link rel="stylesheet" href="or_volunteer.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <li><span class="material-symbols-outlined" id="menu-button">menu</span></li>
+          <!-- <div class="sidebar">
+            <span class="logo" id="menu-button">menu</span>
+          </div> -->
+          <img
+            class="img1"
+            src="Screenshot 2025-02-20 192133.png"
+            alt="Event Logo"
+            align="CENTER"
+          />
+          <ul>
+            <li><a href="or_home.html">Home</a></li>
+            <li><a href="create_event.html">Manage Event</a></li>
+            <li><a href="create_event.html">My Events</a></li>
+            <li><a href="insight.html">Insights</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span style="color: black;">Event Orbit Menu</span>
+        <button class="toggle-btn" id="close-btn">-></button>
+      </div>
+  
+      <ul class="sidebar-menu">
+        <hr>
+        <li>
+          <a href="index.html">
+            <span class="icon">🏠</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="categories.html">
+            <span class="icon">🔖</span>
+            <span>Create/Manage</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="volunteer.html">
+            <span class="icon">👐</span>
+            <span>Volunteers</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="contactus.html">
+            <span class="icon">📞</span>
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="logIn.html">
+            <span class="icon">🔑</span>
+            <span>Login</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="signUp.html">
+            <span class="icon">✏️</span>
+            <span>Sign Up</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="profile.html">
+            <span class="icon">👤</span>
+            <span>Profile</span>
+          </a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+
+    <div class="container">
+        <!-- First Poster-->
+        <div class="card">
+            <div class="card-image">
+                <img src="v1.jpg" alt="Poster">
+            </div>
+            <div class="card-content">
+                <b>This is the workshop for the Artificial Intelligence.</b><br>
+                Guest:Jaimin Dave<br>
+                Location:Aryabhatt Hall<br>
+                Date:01/03/2025<br>
+                Timing:10:30 AM onward
+            </div>
+            <button class="apply-button">Add</button>
+        </div>
+
+        <!-- Second Poster-->
+        <div class="card">
+            <div class="card-image">
+                <img src="v2.jpg" alt="Poster">
+            </div>
+            <div class="card-content">
+                <b>This is the workshop for the Advance Python.</b><br>
+                Guest:Dr. Satvik Khara<br>
+                Location:C.V. Raman Hall<br>
+                Date:05/03/2025<br>
+                Timing:12:00 PM onward
+            </div>
+            <button class="apply-button">Add</button>
+        </div>
+
+        <!-- Third Poster-->
+        <div class="card">
+            <div class="card-image">
+                <img src="v3.jpg" alt="Poster">
+            </div>
+            <div class="card-content">
+                <b>This is the workshop for the Core C++.</b><br>
+                Guest:Digant Parmar<br>
+                Location:Newton Hall<br>
+                Date:10/03/2025<br>
+                Timing:11:15 AM onward
+            </div>
+            <button class="apply-button">Add</button>
+        </div>
+
+    </div>
+    <footer>
+        <p>All Rights Reserved. &copy; 2025 Copyrights Reserved.</p>
+    </footer>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('close-btn');
+const overlay = document.getElementById('overlay');
+
+if (menuButton && sidebar && closeBtn && overlay) {
+    menuButton.addEventListener('click', function (e) {
+        e.stopPropagation();
+        sidebar.classList.add('open');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        closeSidebar();
+    });
+
+    overlay.addEventListener('click', closeSidebar);
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function (e) {
+        if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && e.target !== menuButton) {
+            closeSidebar();
+        }
+    });
+
+    sidebar.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+}
+    </script>
+</body>
+</html>

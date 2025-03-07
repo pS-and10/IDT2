@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Insights</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+  />
+    <link rel="stylesheet" href="insight.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <li><span class="material-symbols-outlined" id="menu-button">menu</span></li>
+            <div class="logo">
+                <img src="Screenshot 2025-02-20 192133.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="or_home.html">Home</a></li>
+                <li><a href="create_event.html">Manage Event</a></li>
+                <li><a href="or_volunteer.html">Volunteers</a></li>
+                <li><a href="create_event.html">My Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span style="color: black;">Event Orbit Menu</span>
+        <button class="toggle-btn" id="close-btn">-></button>
+      </div>
+  
+      <ul class="sidebar-menu">
+        <hr>
+        <li>
+          <a href="index.html">
+            <span class="icon">🏠</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="categories.html">
+            <span class="icon">🔖</span>
+            <span>Create/Manage</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="volunteer.html">
+            <span class="icon">👐</span>
+            <span>Volunteers</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="contactus.html">
+            <span class="icon">📞</span>
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="logIn.html">
+            <span class="icon">🔑</span>
+            <span>Login</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="signUp.html">
+            <span class="icon">✏️</span>
+            <span>Sign Up</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="profile.html">
+            <span class="icon">👤</span>
+            <span>Profile</span>
+          </a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+
+    <div class="container">
+        <h2>Event Insights</h2>
+
+        <!-- Bar Chart: Number of Participants per Event -->
+        <canvas id="eventChart"></canvas>
+
+        <!-- Pie Chart: Percentage Distribution of Event Categories -->
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <footer>
+        <p>All Rights Reserved. &copy; 2025 Copyrights Reserved.</p>
+    </footer>
+
+    <script src="insight.js"></script>
+</body>
+</html>
